@@ -1,0 +1,13 @@
+{{define "header"}}
+  <h1>{{.Title}} - List</h1>
+{{end}}
+{{define "main"}}
+  <ul>
+    {{range .Pages}}
+    <li><a href="{{.Permalink}}">{{.Title}}</a> | {{.Params.Author}} | {{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}
+      <br>{{ truncate 20 .Content }}</li>
+    {{end}}
+  </ul>
+{{end}}
+{{define "footer"}}
+{{end}}

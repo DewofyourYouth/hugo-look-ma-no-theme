@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  header {
+    background-color: #444;
+    padding: 30px;
+    text-align: center;
+    color: white;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+.deets {
+  color: #444;
+  font-size: .8rem;
+}

@@ -1,0 +1,9 @@
+{{define "header"}}
+<h1>{{.Title}}</h1>
+{{end}}
+{{define "main"}}
+<p class="deets">{{.Params.Author}} | {{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+<p>
+  {{.Content}}
+</p>
+{{end}}
